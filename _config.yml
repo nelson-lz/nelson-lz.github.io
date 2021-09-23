@@ -51,7 +51,7 @@ staticman:
     email                : # "md5"
   generatedFields:
     date:
-      type               : # "date"
+      type               : "2021-09-23" # "date"
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
@@ -80,7 +80,7 @@ naver_site_verification  :
 twitter:
   username               : "nelson-lz.github.io"
 facebook:
-  username               : "nelson-lz.github.io"
+  username               : #"nelson-lz.github.io"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -101,14 +101,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "nelson-lz.github.io"
+  name             : "nelson-lz"
   avatar           : "https://avatars.githubusercontent.com/u/51168982?v=4"
-  bio              : "Pentester, CTF player<br>HackTheBox ATeam"
+  bio              : "Lic. en Análisis de Sistemas"
   location         : "Paraguay"
   email            : "nelsonlz@outlook.com"
-  uri              :
+  uri              : "nelson-lz.github.io"
   home             : # null (default), "absolute or relative url to link to author home"
-  bitbucket        :
+  bitbucket        : "nelson-lz"
   codepen          :
   dribbble         :
   flickr           :
