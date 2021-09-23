@@ -12,10 +12,10 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
-minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"haxor" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "es-PY"
 title                    : "nelson-lz"
 title_separator          : "-"
 name                     : "nelson-lz"
@@ -37,7 +37,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "dark" #"light"(default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
@@ -71,7 +71,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "${GOOGLE_SITE_VERIFICATION}"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -95,17 +95,17 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-145129883-1"
+    tracking_id          : "${ID_GOOGLE_ANALYTICS}"
     anonymize_ip         : false # (default)
 
 
 # Site Author
 author:
   name             : "nelson-lz.github.io"
-  avatar           : "/assets/images/avatar.png"
+  avatar           : "https://avatars.githubusercontent.com/u/51168982?v=4"
   bio              : "Pentester, CTF player<br>HackTheBox ATeam"
   location         : "Paraguay"
-  email            : "info@nelson-lz.github.io"
+  email            : "nelsonlz@outlook.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -117,16 +117,16 @@ author:
   github           : "nelson-lz"
   gitlab           :
   google_plus      :
-  keybase          : "nelson-lz.github.io"
+  keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "nelson-lz" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "nelson-lz.github.io"
+  twitter          : "N_ls_n"
   vine             :
   weibo            :
   xing             :
@@ -199,7 +199,7 @@ sass:
 permalink: /:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "America/Asuncion" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
