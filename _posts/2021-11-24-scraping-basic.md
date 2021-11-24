@@ -11,7 +11,7 @@ tags:
   - python
   - BeautifulSoup4
 ---
-## En este mini tutorial trataré de explicar cómo extraer algunos datos de una página web, en este caso será de la página web de un supermercado.
+### En este mini tutorial trataré de explicar cómo extraer algunos datos de una página web, en este caso será de la página web de un supermercado.
 
 <br>
 
@@ -36,7 +36,7 @@ Para comenzar debemos tener instalado en nuestro ordenador python ya que con est
 ### `Requeriments.txt`
 ---
 En el directorio de nuestro proyecto podemos tener un archivo de texto con el nombre de requirements.txt en donde definiremos las librerías que necesitamos con la versión correspondiente. *Es opcional*.
-```txt
+```
 requests~=2.26.0
 beautifulsoup4~=4.10.0
 ```
@@ -65,7 +65,7 @@ if req.status_code == 200:
 ```
 > Con soup.find_all() obtenemos una lista da todas las etiquetas que cumplen con el filtro que hemos puesto, en este caso el tag `li` con el atributo de `class=level3`. En el parámetro `attrs` puede ir una lista de atributos por ejemplo `{'class':'level3 fontbold','id':'123'}`.
 ---
-```html
+``` html
 <li class="inactive level3">
   <a class="collapsed" href="https://superseis.com.py/category/3-almacen-aderezoscondimentos-aceites.aspx">
     Aceites
@@ -74,7 +74,6 @@ if req.status_code == 200:
 </li>
 ```
 > Al recorrer la lista de elementos encontrados podemos capturar los datos que nos interesan, como en este caso son el nombre y el link de la categoría. Un ejemplo de un elemento de la lista resultante de la búsqueda es el html que esta arriba y vemos que el tag `<li>` tiene como hijos a los tags `<a>` y `<ul>`. Viendo esto podemos capturar el link con `elem.a['href']` y también la descripción con `elem.a.string` utilizamos string al final para obtener solo el texto del tag `<a>`. Para mas información de como utilizar los métodos de BeautifulSoup4 consulta la [documentación](https://beautiful-soup-4.readthedocs.io/en/latest/).
----
 ---
 
 Pueden tener un ejemplo simple de scraping a una web en mi repositorio [collect-price](git@github.com:nelson-lz/collect-prices.git). Todas las criticas constructivas son bienvenidas. <br>
